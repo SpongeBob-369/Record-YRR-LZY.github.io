@@ -1,10 +1,3 @@
-/*
-作者: imsyy
-主页：https://www.imsyy.top/
-GitHub：https://github.com/imsyy/home
-版权所有，请勿删除
-*/
-
 /* 自定义配置 */
 /* 尚未完善 */
 $(function () {
@@ -21,7 +14,7 @@ $(function () {
             /* 基础信息 */
             $("#logo-img").attr("src", data.logo_img);
             $('#logo-text-1').html(data.logo_text_1);
-            $('#logo-text-2').html("." + data.logo_text_2);
+            $('#logo-text-2').html(data.logo_text_2);
             $('#logo-title-other').html(data.logo_text_1);
             $('#logo-title-other-small').html("." + data.logo_text_2);
             $('#logo-text-small').html(data.logo_text_1 + "." + data.logo_text_2);

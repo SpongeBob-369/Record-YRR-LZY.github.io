@@ -50,7 +50,7 @@ window.addEventListener('load', function () {
             timeout: 2500,
             icon: false,
             title: hello,
-            message: '欢迎来看 关于yuuu和levi。'
+            message: '欢迎来看 关于YRR和LZY。'
         });
     }, 800);
 
@@ -97,12 +97,12 @@ let daysDiff = 0; // 用于存储计算的天数
 $('#hitokoto').click(function () {
     if (!isShowingDays) {
         // 计算天数
-        const startDate = new Date('2024-08-28');
+        const startDate = new Date('2024-12-12');
         const currentDate = new Date();
         const timeDiff = currentDate - startDate; // 计算时间差
         daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // 转换为天数
 
-        $('#hitokoto_text').html(`喜欢你的第 ${daysDiff} 天。今后也请多多关照。`);
+        $('#hitokoto_text').html(`在一起的第 ${daysDiff} 天。今后也请多多关照。`);
         $('#from_text').html(''); // 清空原来的出处文本
     } else {
         // 切换回一言内容
@@ -340,16 +340,15 @@ color: #425AEF;
 let styleContent = `
 color: rgb(30,152,255);
 `
-let title1 = 'Leviの主页'
+let title1 = 'SpongeBobの主页'
 let title2 = `
 
-_       _____  __     __  ___ 
-| |     | ____| \ \   / / |_ _|
-| |     |  _|    \ \ / /   | | 
-| |___  | |___    \ V /    | | 
-|_____| |_____|    \_/    |___|
+      _____   _____   _____   __ __   ______   ______   _____   _____   _____  
+     / ____| |  _  \ /  _  \ |  \  | |  ____| | | ___| | ____\ /  _  \ | ____\
+     \____ \ | |_) | | | | | |   \ | | |__ _  | |————| |____ / | | | | |_____/ 
+      ___/ / |  __/  | |_| | | |\  | | |__| | | |————| | ____\ | |_| | | ____\  
+     \____/  |_|     \_____/ |_| \_| \______| |______|_|_____/ \_____/ |_____/
                                                          
-              
 `
 let content = ``
 console.log(`%c${title1} %c${title2}

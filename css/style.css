@@ -194,12 +194,12 @@ main {
 }
 
 .img-title-big {
-    font-size: 5rem;
+    font-size: 5vw;
     font-family: 'Pacifico-Regular' !important;
 }
 
 span.img-text {
-    font-size: 2rem;
+    font-size: 3vw;
     font-family: 'Pacifico-Regular' !important;
 }
 
