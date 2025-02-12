@@ -1,0 +1,19 @@
+{
+    "title": "椰蓉海绵",
+    "description": "关于YRR和LZY",
+    "keywords": "Yrrrrr,lzyyyy",
+    "author": "SpongeBob",
+    "logo_img": "touxiang.jpg",
+    "logo_text_1": "YRR & LZY",
+    "logo_text_2": "多一笔坚定，少一笔刁难，写好“恋人这十二画”",
+    "link_1": [
+        "w/photo.html",
+        "fas fa-palette",
+        "用笔尖代替指尖勾勒你的脸庞"
+    ],
+    "link_2": [
+        "w/diary.html",
+        "fas fa-pen-nib",
+        "随笔。每日家情思睡昏昏"
+    ]
+}

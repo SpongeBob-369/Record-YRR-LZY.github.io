@@ -1,0 +1,46 @@
+{
+  "name": "Spongebobの主页",
+  "short_name": "Spongebobの主页",
+  "description": "YRR & LZY",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#424242",
+  "background_color": "#424242",
+  "icons": [
+    {
+      "src": "w/touxiang.jpg",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "touxiang.jpg",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "touxiang.jpg",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "touxiang.jpg",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "touxiang.jpg",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "touxiang.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "touxiang.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
