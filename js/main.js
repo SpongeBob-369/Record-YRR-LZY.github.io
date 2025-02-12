@@ -114,13 +114,12 @@ $('#hitokoto').click(function () {
 });
 
 
-
 //获取天气
 //请前往 https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
 //请前往 https://dev.qweather.com/ 申请 key
-const add_id = "vcpmlmqiqnjpxwq1"; // app_id
-const app_secret = "PeYnsesgkmK7qREhIFppIcsoN0ZShv3c"; // app_secret
-const key = "691d007d585841c09e9b41e79853ecc2" // key
+const add_id = "kpfyijrowqgrndfg"; // app_id
+const app_secret = "xfoHFZOmqUuMcsfSIKHAAuFFeEEkMFtB"; // app_secret
+const key = "d9d2be4aa3f14a66bcb4e1bd551bcd22" // key
 function getWeather() {
     fetch("https://www.mxnzp.com/api/ip/self?app_id=" + add_id + "&app_secret=" + app_secret)
         .then(response => response.json())
@@ -238,9 +237,24 @@ $('#switchmore').on('click', function () {
         $("#change1").html("被发现了喵qwq（ 再点击一次可关闭 ）");
     } else {
         $('#container').attr('class', 'container');
-        $("#change").html("LEVI&nbsp;");
+        $("#change").html("");
         $("#change1").html("这世界瞬息万变, 总有一刻我们心脏相连。");
     }
+    const quotes = [
+        "少年心动是仲夏夜的荒原，割不完，烧不尽，长风一吹，野草就连了天。",
+        "这世界瞬息万变，总有一刻我们心脏相连。",
+        "在未知的路口，我们相遇，彼此有了故事。",
+        "每个努力的瞬间，都是未来某个时刻的铺垫。",
+        "风带走的，不仅是夏天的气息，还有我们的回忆。"
+    ];
+
+    let currentIndex = 0;
+
+    // 每 30 秒更新 #change1 的内容
+    setInterval(function() {
+        currentIndex = (currentIndex + 1) % quotes.length;  // 循环切换
+        $('#change1').text(quotes[currentIndex]);
+    }, 30000); // 30000 毫秒即 30 秒
 });
 
 //更多页面关闭按钮
@@ -287,7 +301,7 @@ window.addEventListener('load', function () {
         if (window.innerWidth <= 990) {
             //移动端隐藏更多页面
             $('#container').attr('class', 'container');
-            $("#change").html("利威尔。&nbsp;");
+            $("#change").html("");
             $("#change1").html("这世界瞬息万变, 总有一刻我们心脏相连。");
 
             //移动端隐藏弹窗页面
@@ -296,7 +310,24 @@ window.addEventListener('load', function () {
             $('#more').css("display", "flex");
         }
     })
-})
+    const quotes = [
+        "少年心动是仲夏夜的荒原，割不完，烧不尽，长风一吹，野草就连了天。",
+        "这世界瞬息万变，总有一刻我们心脏相连。",
+        "在未知的路口，我们相遇，彼此有了故事。",
+        "每个努力的瞬间，都是未来某个时刻的铺垫。",
+        "风带走的，不仅是夏天的气息，还有我们的回忆。"
+    ];
+
+    let currentIndex = 0;
+
+    // 每 30 秒更新 #change1 的内容
+    setInterval(function() {
+        currentIndex = (currentIndex + 1) % quotes.length;  // 循环切换
+        $('#change1').text(quotes[currentIndex]);
+    }, 10000); // 30000 毫秒即 30 秒
+});
+
+
 
 //移动端切换功能区
 let changemore = false;
@@ -341,11 +372,11 @@ let styleContent = `
 color: rgb(30,152,255);
 `
 let title1 = 'SpongeBobの主页'
-let title2 = `
-
+let title2 = 
+`
       _____   _____   _____   __ __   ______   ______   _____   _____   _____  
      / ____| |  _  \ /  _  \ |  \  | |  ____| | | ___| | ____\ /  _  \ | ____\
-     \____ \ | |_) | | | | | |   \ | | |__ _  | |————| |____ / | | | | |_____/ 
+     \____ \ | |_) | | | | | |   \ | | |__ _  | |————| |____ / | | | | |____ / 
       ___/ / |  __/  | |_| | | |\  | | |__| | | |————| | ____\ | |_| | | ____\  
      \____/  |_|     \_____/ |_| \_| \______| |______|_|_____/ \_____/ |_____/
                                                          

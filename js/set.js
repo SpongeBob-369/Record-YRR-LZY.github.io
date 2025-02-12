@@ -72,11 +72,26 @@ let bg_img_preinstall = {
 // 更改背景图片
 function setBgImgInit() {
     let bg_img = getBgImg();
+    // 选中对应壁纸类型的单选按钮
     $("input[name='wallpaper-type'][value=" + bg_img["type"] + "]").click();
 
     switch (bg_img["type"]) {
         case "1":
-            $('#bg').attr('src', `./img/background${1 + ~~(Math.random() * 11)}.jpg`) //随机默认壁纸
+            // 定义一个函数，用于随机切换壁纸
+            function setRandomWallpaper() {
+                // 1 + ~~(Math.random() * 2) 会在 1、2 之间随机选一个
+                // 对应 background1.jpg 或 background2.jpg
+                $('#bg').attr('src', `./img/background${1 + ~~(Math.random() * 8)}.jpg`);
+            }
+
+            // 第一次立即设置壁纸
+            setRandomWallpaper();
+
+            // 每 30 秒随机更换一次壁纸
+            setInterval(function() {
+                setRandomWallpaper();
+            }, 10000);
+
             break;
     }
 };
